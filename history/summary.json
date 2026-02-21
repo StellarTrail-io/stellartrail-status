@@ -4,66 +4,26 @@
     "url": "https://stellartrail.io",
     "icon": "https://icons.duckduckgo.com/ip3/stellartrail.io.ico",
     "slug": "stellar-trail-main-site",
-    "status": "down",
-    "uptime": "0.28%",
-    "uptimeDay": "0.28%",
-    "uptimeWeek": "0.28%",
-    "uptimeMonth": "0.28%",
-    "uptimeYear": "0.28%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "85.11%",
+    "uptimeDay": "85.11%",
+    "uptimeWeek": "85.11%",
+    "uptimeMonth": "85.11%",
+    "uptimeYear": "85.11%",
+    "time": 559,
+    "timeDay": 559,
+    "timeWeek": 559,
+    "timeMonth": 559,
+    "timeYear": 559,
     "dailyMinutesDown": {
       "2026-02-21": 19
     }
   },
   {
     "name": "StellarTrail API",
-    "url": "https://api.stellartrail.io/health",
+    "url": "https://api.stellartrail.io/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
     "slug": "stellar-trail-api",
-    "status": "down",
-    "uptime": "0.03%",
-    "uptimeDay": "0.03%",
-    "uptimeWeek": "0.03%",
-    "uptimeMonth": "0.03%",
-    "uptimeYear": "0.03%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-02-21": 19
-    }
-  },
-  {
-    "name": "StellarTrail Charting",
-    "url": "https://api.stellartrail.io/charting/health",
-    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
-    "slug": "stellar-trail-charting",
-    "status": "down",
-    "uptime": "0.04%",
-    "uptimeDay": "0.04%",
-    "uptimeWeek": "0.04%",
-    "uptimeMonth": "0.04%",
-    "uptimeYear": "0.04%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-02-21": 19
-    }
-  },
-  {
-    "name": "StellarTrail AI Coach",
-    "url": "https://api.stellartrail.io/coach/health",
-    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
-    "slug": "stellar-trail-ai-coach",
     "status": "down",
     "uptime": "0.00%",
     "uptimeDay": "0.00%",
@@ -76,7 +36,65 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-02-21": 19
+      "2026-02-21": 130
+    }
+  },
+  {
+    "name": "StellarTrail Charting",
+    "url": "https://api.stellartrail.io/api/health/charting",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
+    "slug": "stellar-trail-charting",
+    "status": "down",
+    "uptime": "20.60%",
+    "uptimeDay": "20.60%",
+    "uptimeWeek": "20.60%",
+    "uptimeMonth": "20.60%",
+    "uptimeYear": "20.60%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 103
+    }
+  },
+  {
+    "name": "StellarTrail AI Coach",
+    "url": "https://api.stellartrail.io/api/health/coach",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
+    "slug": "stellar-trail-ai-coach",
+    "status": "down",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "StellarTrail Queues",
+    "url": "https://api.stellartrail.io/api/health/queues",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
+    "slug": "stellar-trail-queues",
+    "status": "down",
+    "uptime": "0.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.00%",
+    "uptimeMonth": "0.00%",
+    "uptimeYear": "0.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 0
     }
   }
 ]
