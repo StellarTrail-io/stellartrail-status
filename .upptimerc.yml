@@ -20,7 +20,7 @@ status-website:
   # Uncomment and set cname when DNS is ready:
   # cname: status.stellartrail.io
   baseUrl: /stellartrail-status
-  logoUrl: https://raw.githubusercontent.com/StellarTrail-io/StellarTrail/main/public/st-logo.png
+  logoUrl: https://raw.githubusercontent.com/StellarTrail-io/stellartrail-status/main/st-logo.png
   name: StellarTrail Status
   introTitle: "**StellarTrail** System Status"
   introMessage: This is the real-time status page for StellarTrail's services. If there are any active incidents, they will be reported here.
