@@ -8,11 +8,13 @@ sites:
   - name: StellarTrail Main Site
     url: https://stellartrail.io
   - name: StellarTrail API
-    url: https://api.stellartrail.io/health
+    url: https://api.stellartrail.io/api/health
   - name: StellarTrail Charting
-    url: https://api.stellartrail.io/charting/health
+    url: https://api.stellartrail.io/api/health/charting
   - name: StellarTrail AI Coach
-    url: https://api.stellartrail.io/coach/health
+    url: https://api.stellartrail.io/api/health/coach
+  - name: StellarTrail Queues
+    url: https://api.stellartrail.io/api/health/queues
 
 status-website:
   # Uncomment and set cname when DNS is ready:
