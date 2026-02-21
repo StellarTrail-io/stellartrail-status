@@ -31,6 +31,37 @@ status-website:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* Nuclear override — injected in <head> to beat Sapper theme specificity */
+      html, body, #sapper, #sapper > div, main, .container,
+      body.dark-mode, html[data-theme="dark"], [data-theme="dark"] body {
+        background-color: #0B0116 !important;
+        background-image:
+          radial-gradient(circle at 20% 80%, rgba(24, 240, 233, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(24, 240, 233, 0.02) 0%, transparent 50%) !important;
+        background-attachment: fixed !important;
+      }
+
+      /* Force card backgrounds */
+      .service-card, .status-card, article, .card,
+      main section > div, .overall-status,
+      [class*="card"], [class*="Card"] {
+        background-color: #1E1538 !important;
+        background-image: none !important;
+      }
+
+      /* Force nav background */
+      nav, header, .navbar, nav.navbar {
+        background-color: rgba(19, 14, 37, 0.95) !important;
+        background-image: none !important;
+      }
+
+      /* Force footer */
+      footer {
+        background-color: #07010F !important;
+        background-image: none !important;
+      }
+    </style>
 
   customCss: |
     /* ========================================
@@ -52,6 +83,10 @@ status-website:
 
     /* === Global === */
     * { box-sizing: border-box; }
+
+    html, body, #sapper, #sapper > div, main, .container {
+      background-color: #0B0116 !important;
+    }
 
     body {
       background-color: #0B0116 !important;
@@ -161,25 +196,21 @@ status-website:
     }
 
     /* === Status Indicators === */
-    /* Up / Operational */
     [class*="up"], [class*="success"], [class*="operational"],
     .status-up {
       color: #22C55E !important;
     }
 
-    /* Down / Major outage */
     [class*="down"], [class*="danger"], [class*="major"],
     .status-down {
       color: #EF4444 !important;
     }
 
-    /* Degraded / Partial */
     [class*="degraded"], [class*="warning"], [class*="partial"],
     .status-degraded {
       color: #F59E0B !important;
     }
 
-    /* Status dots / circles */
     .status-circle, .status-dot,
     [class*="status-indicator"] {
       box-shadow: 0 0 8px currentColor !important;
