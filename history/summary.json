@@ -1,0 +1,82 @@
+[
+  {
+    "name": "StellarTrail Main Site",
+    "url": "https://stellartrail.com",
+    "icon": "https://icons.duckduckgo.com/ip3/stellartrail.com.ico",
+    "slug": "stellar-trail-main-site",
+    "status": "down",
+    "uptime": "11.90%",
+    "uptimeDay": "11.90%",
+    "uptimeWeek": "11.90%",
+    "uptimeMonth": "11.90%",
+    "uptimeYear": "11.90%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 0
+    }
+  },
+  {
+    "name": "StellarTrail API",
+    "url": "https://api.stellartrail.com/health",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.com.ico",
+    "slug": "stellar-trail-api",
+    "status": "down",
+    "uptime": "3.27%",
+    "uptimeDay": "3.27%",
+    "uptimeWeek": "3.27%",
+    "uptimeMonth": "3.27%",
+    "uptimeYear": "3.27%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 0
+    }
+  },
+  {
+    "name": "StellarTrail Charting",
+    "url": "https://api.stellartrail.com/charting/health",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.com.ico",
+    "slug": "stellar-trail-charting",
+    "status": "down",
+    "uptime": "9.17%",
+    "uptimeDay": "9.17%",
+    "uptimeWeek": "9.17%",
+    "uptimeMonth": "9.17%",
+    "uptimeYear": "9.17%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 0
+    }
+  },
+  {
+    "name": "StellarTrail AI Coach",
+    "url": "https://api.stellartrail.com/coach/health",
+    "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.com.ico",
+    "slug": "stellar-trail-ai-coach",
+    "status": "down",
+    "uptime": "4.56%",
+    "uptimeDay": "4.56%",
+    "uptimeWeek": "4.56%",
+    "uptimeMonth": "4.56%",
+    "uptimeYear": "4.56%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-02-21": 0
+    }
+  }
+]
