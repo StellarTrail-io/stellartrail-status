@@ -6,17 +6,17 @@ repo: stellartrail-status
 # Add your sites here
 sites:
   - name: StellarTrail Main Site
-    url: https://stellartrail.com
+    url: https://stellartrail.io
   - name: StellarTrail API
-    url: https://api.stellartrail.com/health
+    url: https://api.stellartrail.io/health
   - name: StellarTrail Charting
-    url: https://api.stellartrail.com/charting/health
+    url: https://api.stellartrail.io/charting/health
   - name: StellarTrail AI Coach
-    url: https://api.stellartrail.com/coach/health
+    url: https://api.stellartrail.io/coach/health
 
 status-website:
   # Uncomment and set cname when DNS is ready:
-  # cname: status.stellartrail.com
+  # cname: status.stellartrail.io
   baseUrl: /stellartrail-status
   logoUrl: https://raw.githubusercontent.com/StellarTrail-io/StellarTrail/main/public/st-logo.png
   name: StellarTrail Status
