@@ -33,6 +33,15 @@ jobs:
         run: |
           EXPORT_DIR="site/status-page/__sapper__/export"
 
+          # Copy favicons from repo root into the build output
+          cp favicon-16x16.png "$EXPORT_DIR/favicon-16x16.png"
+          cp favicon-32x32.png "$EXPORT_DIR/favicon-32x32.png"
+          cp favicon-192x192.png "$EXPORT_DIR/favicon-192x192.png"
+
+          # Inject favicon link tags into all HTML files
+          FAVICON_TAGS='<link rel="icon" type="image/png" sizes="32x32" href="/stellartrail-status/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/stellartrail-status/favicon-16x16.png"><link rel="apple-touch-icon" sizes="192x192" href="/stellartrail-status/favicon-192x192.png">'
+          find "$EXPORT_DIR" -name "*.html" -exec sed -i "s|</head>|${FAVICON_TAGS}</head>|g" {} +
+
           # Replace dark.css with StellarTrail design system
           cat > "$EXPORT_DIR/themes/dark.css" << 'DARKEOF'
           :root {
@@ -140,8 +149,7 @@ jobs:
           ::selection { background: rgba(24, 240, 233, 0.3); color: #F5F7FA; }
           GLOBALEOF
 
-          echo "StellarTrail theme applied to dark.css and global.css"
-          head -5 "$EXPORT_DIR/themes/dark.css"
+          echo "StellarTrail theme and favicons applied"
       - name: List site output
         run: |
           echo "=== Checking if site was built ==="
