@@ -1,0 +1,29 @@
+:root {
+  --body-background-color: #0B0116;
+  --body-text-color: #D8DCE8;
+  --card-background-color: #1E1538;
+  --nav-background-color: #130E25;
+  --nav-border-bottom-color: rgba(24, 240, 233, 0.15);
+  --nav-current-border-bottom-color: #18F0E9;
+  --card-border-color: #1E293B;
+  --down-border-left-color: #EF4444;
+  --down-background-color: rgba(239, 68, 68, 0.15);
+  --down-color-color: #EF4444;
+  --degraded-border-left-color: #F59E0B;
+  --degraded-color-color: #F59E0B;
+  --up-border-left-color: #22C55E;
+  --up-color-color: #22C55E;
+  --tag-color: #07010F;
+  --tag-up-background-color: #22C55E;
+  --tag-down-background-color: #EF4444;
+  --tag-degraded-background-color: #F59E0B;
+  --change-background-color: #F59E0B;
+  --error-button-border-color: #18F0E9;
+  --error-button-background-color: rgba(24, 240, 233, 0.1);
+  --error-button-color: #18F0E9;
+  --submit-button-border-color: #18F0E9;
+  --submit-button-background-color: #18F0E9;
+  --submit-button-color: #07010F;
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
