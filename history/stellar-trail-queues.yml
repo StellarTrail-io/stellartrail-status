@@ -1,7 +1,7 @@
 url: https://api.stellartrail.io/api/health/queues
 status: up
 code: 200
-responseTime: 27
-lastUpdated: 2026-02-22T23:17:15.338Z
+responseTime: 23
+lastUpdated: 2026-02-23T22:12:35.344Z
 startTime: 2026-02-21T07:47:28.867Z
 generator: Upptime <https://github.com/upptime/upptime>
