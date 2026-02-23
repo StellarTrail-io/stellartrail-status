@@ -27,197 +27,127 @@ status-website:
 
   theme: dark
 
+  # CSS injected via customHeadHtml because customCss injection is unreliable.
+  # customHeadHtml IS injected (proven by Google Fonts links) — so we use a <style> tag here.
   customHeadHtml: |
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* ========================================
+         StellarTrail Brand Overrides
+         Injected via customHeadHtml <style> tag
+         ======================================== */
 
+      :root {
+        --body-background-color: #0B0116 !important;
+        --body-text-color: #D8DCE8 !important;
+        --card-background-color: #1E1538 !important;
+        --nav-background-color: #130E25 !important;
+        --nav-border-bottom-color: #1E293B !important;
+        --nav-current-border-bottom-color: #18F0E9 !important;
+        --card-border-color: #1E293B !important;
+        --down-border-left-color: #EF4444 !important;
+        --down-background-color: #7F1D1D !important;
+        --degraded-border-left-color: #F59E0B !important;
+        --up-border-left-color: #22C55E !important;
+        --tag-color: #0B0116 !important;
+        --tag-up-background-color: #22C55E !important;
+        --tag-down-background-color: #EF4444 !important;
+        --tag-degraded-background-color: #F59E0B !important;
+        --error-button-border-color: #18F0E9 !important;
+        --error-button-background-color: transparent !important;
+        --error-button-color: #18F0E9 !important;
+        --submit-button-border-color: #18F0E9 !important;
+        --submit-button-background-color: #18F0E9 !important;
+        --submit-button-color: #07010F !important;
+      }
+
+      body {
+        background-color: #0B0116 !important;
+        background-image:
+          radial-gradient(circle at 20% 80%, rgba(24, 240, 233, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(24, 240, 233, 0.02) 0%, transparent 50%) !important;
+        background-attachment: fixed !important;
+        color: #D8DCE8 !important;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      nav {
+        background-color: #130E25 !important;
+        border-bottom-color: rgba(24, 240, 233, 0.15) !important;
+      }
+
+      nav a { color: #D8DCE8 !important; font-weight: 600 !important; }
+      nav a:hover, nav a.active, [aria-current] {
+        color: #18F0E9 !important;
+        border-bottom-color: #18F0E9 !important;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #F5F7FA !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.025em !important;
+      }
+
+      h1 strong, h2 strong {
+        color: #18F0E9 !important;
+        text-shadow: 0 0 30px rgba(24, 240, 233, 0.3) !important;
+      }
+
+      p { color: #8A8FA8 !important; line-height: 1.625 !important; }
+      a { color: #18F0E9 !important; }
+      a:hover { color: #5DF5EF !important; }
+
+      article {
+        background-color: #1E1538 !important;
+        border-color: #1E293B !important;
+        border-radius: 0.75rem !important;
+        transition: border-color 200ms ease, box-shadow 200ms ease !important;
+      }
+      article:hover {
+        border-color: rgba(24, 240, 233, 0.3) !important;
+        box-shadow: 0 0 20px -5px rgba(24, 240, 233, 0.1) !important;
+      }
+      article h4 { color: #F5F7FA !important; }
+      article p, article span { color: #8A8FA8 !important; }
+
+      h3 { color: #8A8FA8 !important; }
+
+      footer {
+        background-color: #07010F !important;
+        border-top: 1px solid #1E293B !important;
+        color: #8A8FA8 !important;
+      }
+      footer a { color: #8A8FA8 !important; }
+      footer a:hover { color: #18F0E9 !important; }
+
+      svg text { fill: #8A8FA8 !important; font-family: 'Inter', sans-serif !important; }
+      svg line { stroke: #1E293B !important; }
+
+      .submit-button {
+        background-color: #18F0E9 !important;
+        color: #07010F !important;
+        font-weight: 700 !important;
+        border-radius: 0.5rem !important;
+      }
+      .submit-button:hover { background-color: #5DF5EF !important; }
+
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #0B0116; }
+      ::-webkit-scrollbar-thumb { background: #1A1230; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #1E1538; }
+
+      ::selection { background: rgba(24, 240, 233, 0.3); color: #F5F7FA; }
+    </style>
+
+  # Keep customCss as well (in case Upptime fixes injection in future versions)
   customCss: |
-    /* ========================================
-       StellarTrail Design System — Status Page
-       Override Upptime's actual CSS variable names
-       ======================================== */
-
     :root {
-      /* Upptime's own variable names */
       --body-background-color: #0B0116 !important;
       --card-background-color: #1E1538 !important;
       --nav-background-color: #130E25 !important;
-      --card-border-color: #1E293B !important;
-      --nav-border-color: rgba(24, 240, 233, 0.15) !important;
-      --nav-current-border-color: #18F0E9 !important;
-      --down-color: #EF4444 !important;
-      --degraded-color: #F59E0B !important;
-      --up-color: #22C55E !important;
-      --tag-up-background-color: #22C55E !important;
-      --tag-down-background-color: #EF4444 !important;
-      --tag-degraded-background-color: #F59E0B !important;
-      --submit-background-color: #18F0E9 !important;
-      --submit-border-color: #18F0E9 !important;
-      --submit-text-color: #07010F !important;
     }
-
-    /* === Global === */
-    body {
-      background-color: #0B0116 !important;
-      background-image:
-        radial-gradient(circle at 20% 80%, rgba(24, 240, 233, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(24, 240, 233, 0.02) 0%, transparent 50%) !important;
-      background-attachment: fixed !important;
-      color: #D8DCE8 !important;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* === Navigation === */
-    nav {
-      background-color: #130E25 !important;
-      border-bottom-color: rgba(24, 240, 233, 0.15) !important;
-    }
-
-    nav a {
-      color: #D8DCE8 !important;
-      font-weight: 600 !important;
-    }
-
-    nav a:hover, nav a.active, [aria-current] {
-      color: #18F0E9 !important;
-      border-bottom-color: #18F0E9 !important;
-    }
-
-    /* === Typography === */
-    h1, h2, h3, h4, h5, h6 {
-      color: #F5F7FA !important;
-      font-weight: 700 !important;
-      letter-spacing: -0.025em !important;
-    }
-
-    h1 strong, h2 strong {
-      color: #18F0E9 !important;
-      text-shadow: 0 0 30px rgba(24, 240, 233, 0.3) !important;
-    }
-
-    p {
-      color: #8A8FA8 !important;
-      line-height: 1.625 !important;
-    }
-
-    a {
-      color: #18F0E9 !important;
-    }
-
-    a:hover {
-      color: #5DF5EF !important;
-    }
-
-    /* === Status Cards (articles) === */
-    article {
-      background-color: #1E1538 !important;
-      border-color: #1E293B !important;
-      border-radius: 0.75rem !important;
-      transition: border-color 200ms ease, box-shadow 200ms ease !important;
-    }
-
-    article:hover {
-      border-color: rgba(24, 240, 233, 0.3) !important;
-      box-shadow: 0 0 20px -5px rgba(24, 240, 233, 0.1) !important;
-    }
-
-    article h4 {
-      color: #F5F7FA !important;
-    }
-
-    article p, article span {
-      color: #8A8FA8 !important;
-    }
-
-    /* Status left-border colors */
-    article.up {
-      border-left-color: #22C55E !important;
-    }
-
-    article.down {
-      border-left-color: #EF4444 !important;
-    }
-
-    article.degraded {
-      border-left-color: #F59E0B !important;
-    }
-
-    /* === Tags === */
-    .tag {
-      border-radius: 0.375rem !important;
-      font-weight: 600 !important;
-    }
-
-    /* === Section headers === */
-    h3 {
-      color: #8A8FA8 !important;
-    }
-
-    /* === Time period selectors === */
-    section .f a, section .f span {
-      color: #8A8FA8 !important;
-      font-weight: 600 !important;
-    }
-
-    section .f a:hover, section .f span:hover {
-      color: #18F0E9 !important;
-    }
-
-    /* === Footer === */
-    footer {
-      background-color: #07010F !important;
-      border-top: 1px solid #1E293B !important;
-      color: #8A8FA8 !important;
-    }
-
-    footer a {
-      color: #8A8FA8 !important;
-    }
-
-    footer a:hover {
-      color: #18F0E9 !important;
-    }
-
-    /* === Graphs === */
-    svg text {
-      fill: #8A8FA8 !important;
-      font-family: 'Inter', sans-serif !important;
-    }
-
-    svg line {
-      stroke: #1E293B !important;
-    }
-
-    /* === Submit/Subscribe button === */
-    .submit-button {
-      background-color: #18F0E9 !important;
-      color: #07010F !important;
-      font-weight: 700 !important;
-      border-radius: 0.5rem !important;
-    }
-
-    .submit-button:hover {
-      background-color: #5DF5EF !important;
-    }
-
-    /* === Error button === */
-    a.error-button {
-      border-color: #18F0E9 !important;
-      color: #18F0E9 !important;
-      border-radius: 0.5rem !important;
-    }
-
-    /* === Scrollbar === */
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: #0B0116; }
-    ::-webkit-scrollbar-thumb { background: #1A1230; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #1E1538; }
-
-    /* === Selection === */
-    ::selection {
-      background: rgba(24, 240, 233, 0.3);
-      color: #F5F7FA;
-    }
+    body { background-color: #0B0116 !important; }
