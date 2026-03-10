@@ -1,7 +1,7 @@
 url: https://api.stellartrail.io/api/health/queues
 status: down
 code: 401
-responseTime: 149
-lastUpdated: 2026-03-09T23:19:31.154Z
+responseTime: 75
+lastUpdated: 2026-03-10T23:19:41.697Z
 startTime: 2026-02-21T07:47:28.867Z
 generator: Upptime <https://github.com/upptime/upptime>
