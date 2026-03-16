@@ -13,32 +13,27 @@ sites:
     url: https://api.stellartrail.io/api/health/charting
   - name: StellarTrail AI Coach
     url: https://api.stellartrail.io/api/health/coach
+    headers:
+      - "x-admin-secret: $ADMIN_QUEUES_SECRET"
   - name: StellarTrail Queues
     url: https://api.stellartrail.io/api/health/queues
+    headers:
+      - "x-admin-secret: $ADMIN_QUEUES_SECRET"
 
 status-website:
-  # Uncomment and set cname when DNS is ready:
-  # cname: status.stellartrail.io
-  baseUrl: /stellartrail-status
+  cname: status.stellartrail.io
   logoUrl: https://raw.githubusercontent.com/StellarTrail-io/stellartrail-status/main/st-logo.png
   name: StellarTrail Status
   introTitle: "**StellarTrail** System Status"
-  introMessage: This is the real-time status page for StellarTrail's services. If there are any active incidents, they will be reported here.
+  introMessage: This page shows live service health for StellarTrail. Active incidents and degraded services are reported here.
 
   theme: dark
 
-  # CSS injected via customHeadHtml because customCss injection is unreliable.
-  # customHeadHtml IS injected (proven by Google Fonts links) — so we use a <style> tag here.
   customHeadHtml: |
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-      /* ========================================
-         StellarTrail Brand Overrides
-         Injected via customHeadHtml <style> tag
-         ======================================== */
-
       :root {
         --body-background-color: #0B0116 !important;
         --body-text-color: #D8DCE8 !important;
@@ -143,7 +138,6 @@ status-website:
       ::selection { background: rgba(24, 240, 233, 0.3); color: #F5F7FA; }
     </style>
 
-  # Keep customCss as well (in case Upptime fixes injection in future versions)
   customCss: |
     :root {
       --body-background-color: #0B0116 !important;
