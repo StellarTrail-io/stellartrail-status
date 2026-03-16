@@ -34,6 +34,7 @@ status-website:
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+      /* === StellarTrail Brand Theme === */
       :root {
         --body-background-color: #0B0116 !important;
         --body-text-color: #D8DCE8 !important;
@@ -58,6 +59,7 @@ status-website:
         --submit-button-color: #07010F !important;
       }
 
+      /* === Base Styles === */
       body {
         background-color: #0B0116 !important;
         background-image:
@@ -70,58 +72,171 @@ status-website:
         -moz-osx-font-smoothing: grayscale;
       }
 
-      nav {
-        background-color: #130E25 !important;
-        border-bottom-color: rgba(24, 240, 233, 0.15) !important;
+      /* === Container === */
+      .container {
+        max-width: 900px !important;
+        padding: 0 2.5rem !important;
       }
 
+      /* === Navigation === */
+      nav {
+        background-color: #130E25 !important;
+        border-bottom: 1px solid rgba(24, 240, 233, 0.15) !important;
+        padding: 0.75rem 0 !important;
+      }
       nav a { color: #D8DCE8 !important; font-weight: 600 !important; }
       nav a:hover, nav a.active, [aria-current] {
         color: #18F0E9 !important;
         border-bottom-color: #18F0E9 !important;
       }
+      nav .logo img {
+        height: 28px !important;
+        width: 28px !important;
+        border-radius: 6px !important;
+      }
 
+      /* === Typography === */
       h1, h2, h3, h4, h5, h6 {
         color: #F5F7FA !important;
         font-weight: 700 !important;
         letter-spacing: -0.025em !important;
       }
-
       h1 strong, h2 strong {
         color: #18F0E9 !important;
         text-shadow: 0 0 30px rgba(24, 240, 233, 0.3) !important;
       }
-
       p { color: #8A8FA8 !important; line-height: 1.625 !important; }
       a { color: #18F0E9 !important; }
       a:hover { color: #5DF5EF !important; }
 
+      /* === Header === */
+      header {
+        padding: 2.5rem 0 1.5rem !important;
+      }
+      header h1 {
+        font-size: 2.25rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      header .lead, header p {
+        font-size: 1rem !important;
+        color: #8A8FA8 !important;
+      }
+
+      /* === Overall Status Banner === */
+      section:first-of-type {
+        margin-bottom: 1.5rem !important;
+      }
+
+      /* === Time Filter Tabs === */
+      div.f form.f {
+        display: flex !important;
+        gap: 0.25rem !important;
+        background: #1E1538 !important;
+        border-radius: 0.5rem !important;
+        padding: 0.25rem !important;
+        border: 1px solid #1E293B !important;
+      }
+      div.f form.f div {
+        display: flex !important;
+      }
+      div.f form.f input[type="radio"] {
+        display: none !important;
+      }
+      div.f form.f label {
+        padding: 0.4rem 0.9rem !important;
+        border-radius: 0.375rem !important;
+        cursor: pointer !important;
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+        color: #8A8FA8 !important;
+        transition: all 150ms ease !important;
+        white-space: nowrap !important;
+      }
+      div.f form.f label:hover {
+        color: #D8DCE8 !important;
+        background: rgba(24, 240, 233, 0.05) !important;
+      }
+      div.f form.f input[type="radio"]:checked + label {
+        background: rgba(24, 240, 233, 0.15) !important;
+        color: #18F0E9 !important;
+      }
+
+      /* === Live Status Heading Row === */
+      div.f {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        margin: 2rem 0 1rem !important;
+      }
+      div.f h2 {
+        margin: 0 !important;
+        font-size: 1.5rem !important;
+      }
+
+      /* === Service Cards === */
       article {
         background-color: #1E1538 !important;
-        border-color: #1E293B !important;
+        border: 1px solid #1E293B !important;
         border-radius: 0.75rem !important;
+        padding: 1.25rem 1.5rem !important;
+        margin-bottom: 0.75rem !important;
         transition: border-color 200ms ease, box-shadow 200ms ease !important;
       }
       article:hover {
         border-color: rgba(24, 240, 233, 0.3) !important;
         box-shadow: 0 0 20px -5px rgba(24, 240, 233, 0.1) !important;
       }
-      article h4 { color: #F5F7FA !important; }
-      article p, article span { color: #8A8FA8 !important; }
+      article h4 {
+        color: #F5F7FA !important;
+        font-size: 1.05rem !important;
+        margin-bottom: 0.25rem !important;
+      }
+      article p, article span {
+        color: #8A8FA8 !important;
+        font-size: 0.875rem !important;
+      }
 
-      h3 { color: #8A8FA8 !important; }
+      /* === Uptime Graph in Cards === */
+      article svg {
+        border-radius: 0.375rem !important;
+        overflow: hidden !important;
+      }
 
+      /* === Sections Spacing === */
+      section {
+        margin-bottom: 1rem !important;
+      }
+      section.live-status {
+        margin-top: 0.5rem !important;
+      }
+
+      /* === Past Incidents === */
+      section:last-of-type h2 {
+        font-size: 1.5rem !important;
+        margin-top: 2rem !important;
+        padding-top: 1.5rem !important;
+        border-top: 1px solid #1E293B !important;
+      }
+
+      /* === Footer === */
       footer {
         background-color: #07010F !important;
         border-top: 1px solid #1E293B !important;
         color: #8A8FA8 !important;
+        padding: 1.5rem 0 !important;
+        margin-top: 3rem !important;
       }
       footer a { color: #8A8FA8 !important; }
       footer a:hover { color: #18F0E9 !important; }
 
+      /* === Graphs === */
       svg text { fill: #8A8FA8 !important; font-family: 'Inter', sans-serif !important; }
       svg line { stroke: #1E293B !important; }
 
+      /* === Loading Spinner === */
+      .loading svg { stroke: #18F0E9 !important; }
+
+      /* === Buttons === */
       .submit-button {
         background-color: #18F0E9 !important;
         color: #07010F !important;
@@ -130,12 +245,20 @@ status-website:
       }
       .submit-button:hover { background-color: #5DF5EF !important; }
 
+      /* === Scrollbar === */
       ::-webkit-scrollbar { width: 8px; height: 8px; }
       ::-webkit-scrollbar-track { background: #0B0116; }
       ::-webkit-scrollbar-thumb { background: #1A1230; border-radius: 4px; }
       ::-webkit-scrollbar-thumb:hover { background: #1E1538; }
-
       ::selection { background: rgba(24, 240, 233, 0.3); color: #F5F7FA; }
+
+      /* === Responsive === */
+      @media (max-width: 640px) {
+        .container { padding: 0 1.25rem !important; }
+        header h1 { font-size: 1.75rem !important; }
+        div.f { flex-direction: column !important; gap: 0.75rem !important; }
+        div.f form.f { width: 100% !important; justify-content: center !important; }
+      }
     </style>
 
   customCss: |
