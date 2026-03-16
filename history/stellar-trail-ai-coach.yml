@@ -1,7 +1,7 @@
 url: https://api.stellartrail.io/api/health/coach
-status: down
-code: 401
-responseTime: 104
-lastUpdated: 2026-03-16T19:27:20.128Z
+status: up
+code: 200
+responseTime: 31
+lastUpdated: 2026-03-16T22:42:17.860Z
 startTime: 2026-02-21T05:37:14.417Z
 generator: Upptime <https://github.com/upptime/upptime>
