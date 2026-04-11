@@ -1,7 +1,7 @@
 url: https://api.stellartrail.io/api/health/charting
-status: down
-code: 429
-responseTime: 81
-lastUpdated: 2026-04-11T11:47:41.487Z
+status: up
+code: 200
+responseTime: 993
+lastUpdated: 2026-04-11T12:24:49.877Z
 startTime: 2026-02-21T05:37:12.589Z
 generator: Upptime <https://github.com/upptime/upptime>
