@@ -1,7 +1,7 @@
 url: https://stellartrail.io
-status: up
-code: 200
-responseTime: 560
-lastUpdated: 2026-04-10T23:27:01.156Z
+status: down
+code: 429
+responseTime: 753
+lastUpdated: 2026-04-11T11:47:37.620Z
 startTime: 2026-02-21T05:37:08.001Z
 generator: Upptime <https://github.com/upptime/upptime>
