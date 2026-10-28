@@ -96,16 +96,16 @@
     "url": "https://api.stellartrail.io/api/health/coach",
     "icon": "https://icons.duckduckgo.com/ip3/api.stellartrail.io.ico",
     "slug": "stellar-trail-ai-coach",
-    "status": "down",
-    "uptime": "93.92%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "93.92%",
+    "status": "up",
+    "uptime": "93.86%",
+    "uptimeDay": "83.92%",
+    "uptimeWeek": "97.70%",
+    "uptimeMonth": "99.47%",
+    "uptimeYear": "93.86%",
     "time": 184,
-    "timeDay": 198,
-    "timeWeek": 235,
-    "timeMonth": 174,
+    "timeDay": 182,
+    "timeWeek": 225,
+    "timeMonth": 173,
     "timeYear": 184,
     "dailyMinutesDown": {
       "2026-03-16": 1167,
@@ -128,7 +128,7 @@
       "2026-06-22": 1440,
       "2026-06-21": 1440,
       "2026-06-20": 437,
-      "2026-10-28": 0
+      "2026-10-28": 232
     }
   },
   {
